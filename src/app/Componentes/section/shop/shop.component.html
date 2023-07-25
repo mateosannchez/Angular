@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div class="section__news">
+
+    <div>
+
+      <div class="width__news" style="display: flex; justify-content: space-between; margin: 10px; padding: 1rem;">
+        <h2 class="news__h2">Últimas noticias</h2>
+  
+        <a (click)="mostrarElementos()" class="footer__a" style="color: black; cursor: pointer;">
+          <h4 style="font-size: 16px;"><i class="ri-arrow-right-line"></i> Ver todas las noticias</h4>
+        </a>
+      </div>
+
+      <div class="news__grid">
+        <div class="news__flex" *ngFor="let elemento of elementos">
+          <div *ngIf="elemento.valor || mostrarElementosFalse">
+            <img style="padding: 1rem;" [src]="elemento.imagen" alt="Imagen" width="200px" height="auto">
+            <a style="font-size: 15px; display: flex; justify-content: center;" class="footer__a" href="">
+              <span>{{ elemento.tipo }}</span>
+              <br>
+            </a>
+            <h3 class="news__span">{{ elemento.titulo }}</h3>
+            <p class="news__fecha">{{ elemento.fecha }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>
