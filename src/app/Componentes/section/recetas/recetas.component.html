@@ -1,0 +1,43 @@
+<div class="recetas">
+    <h1 class="recetas__h1">LA ÚLTIMA RECETA DE MATTY</h1>
+
+    <div class="recetas__flex">
+        <div>
+            <img src="../../../../assets/img/recetas.png" alt="" width="100%">
+        </div>
+
+        <div class="recetas__borderTop" id="receta" (mouseenter)="cambiarTextoYColor()"
+            (mouseleave)="resetearTextoYColor()">
+            <h1 class="recetas__h11">{{ texto }}</h1>
+        </div>
+
+    </div>
+
+    <div class="recetas__grid">
+        <div style="border: 2px solid black; ">
+            <div>
+                <img src="../../../../assets/img/recetas1.png" alt="" width="100%">
+            </div>
+
+            <div style="border-top: 2px solid black; height: 23.4%;" id="recetas1" (mouseenter)="cambiarTextoYColor1()"
+                (mouseleave)="resetearTextoYColor1()">
+                <h1 class="recetas__h12">{{ texto1 }}</h1>
+            </div>
+        </div>
+
+        <div style="border: 2px solid black; ">
+            <div>
+                <img src="../../../../assets/img/recetas2.png" alt="" width="100%">
+            </div>
+
+            <div style="border-top: 2px solid black; height: 23.4%;" id="recetas2" (mouseenter)="cambiarTextoYColor2()"
+                (mouseleave)="resetearTextoYColor2()">
+                <h1 class="recetas__h12">{{ texto2 }}</h1>
+            </div>
+        </div>
+    </div>
+
+    <a href="" style="text-decoration: none;">
+        <h1 class="recetas__h13">más recetas aquí</h1>
+    </a>
+</div>

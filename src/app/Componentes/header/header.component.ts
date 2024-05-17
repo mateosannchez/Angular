@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -6,6 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
+  // showNav: boolean = false;
 
+  // @HostListener('window:scroll', [])
+  // onWindowScroll() {
+  //     const scrollPosition = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+  //     if (scrollPosition > 0) {
+  //         this.showNav = true;
+  //     } else {
+  //         this.showNav = false;
+  //     }
+  // }
 
 }

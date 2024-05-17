@@ -1,0 +1,226 @@
+<section id="productos">
+    <div class="productos__grid">
+        <div style="background-color: rgb(4, 171, 104)" class="productos__flex">
+            <h1 class="productos__h1">
+                MACARRONES CON QUESO
+            </h1>
+        </div>
+
+        <div class="productos__flex" 
+            (mouseenter)="showLine = true" 
+            (mouseleave)="showLine = false" 
+            (mouseenter)="showWords = true" 
+            (mouseleave)="showWords = false"
+        >
+            <div class="image-container">
+                <img style="width: 100%;" class="productos__img" src="../../../../assets/img/prod1.png" alt="">
+            </div>
+            <h1 class="productosDetail__h1" [class.show-line]="showLine">original</h1>
+            <div class="words" [class.show]="showWords">
+                <span class="word">picante</span>
+                <span class="word">brillante</span>
+                <span class="word">afilado</span>
+            </div>
+        
+        </div>
+        
+
+        <div class="productos__flex" 
+            (mouseenter)="showLine1 = true" 
+            (mouseleave)="showLine1 = false" 
+            (mouseenter)="showWords1 = true" 
+            (mouseleave)="showWords1 = false"
+        >
+            <div class="image-container">
+                <img style="width: 100%;" class="productos__img" src="../../../../assets/img/prod2.png" alt="">
+            </div>
+            <h1 style="width: 70%;" class="productosDetail__h1" [class.show-line]="showLine1">PEP PEP AGRIETADO</h1>
+            <div class="words" [class.show]="showWords1">
+                <span class="word">picante</span>
+                <span class="word">cremoso</span>
+            </div>
+        
+        </div>
+
+        <div class="productos__flex" 
+            (mouseenter)="showLine2 = true" 
+            (mouseleave)="showLine2 = false" 
+            (mouseenter)="showWords2 = true" 
+            (mouseleave)="showWords2 = false"
+        >
+            <div style="width: 40%;" class="image-container">
+                <img style="width: 100%;" class="productos__img" src="../../../../assets/img/prod3.png" alt="">
+            </div>
+            <h1 style="width: 70%;" class="productosDetail__h1" [class.show-line]="showLine2">MAC CREMOSO Y AHUMADO</h1>
+            <div class="words" [class.show]="showWords2">
+                <span class="word">aromático</span>
+                <span class="word">rico</span>
+                <span class="word">sabroso</span>
+            </div>
+        
+        </div>
+
+        <div style="background-color: rgb(244, 217, 20);" class="productos__flex">
+            <h1 class="productos__h1">
+                ADEREZO PARA ENSALADAS
+            </h1>
+        </div>
+
+        <div class="productos__flex" 
+            (mouseenter)="showLine3 = true" 
+            (mouseleave)="showLine3 = false" 
+            (mouseenter)="showWords3 = true" 
+            (mouseleave)="showWords3 = false"
+        >
+            <div style="width: 30%;" class="image-container">
+                <img style="width: 100%;" class="productos__img" src="../../../../assets/img/prod4_1.png" alt="">
+            </div>
+            <h1 class="productosDetail__h1" [class.show-line]="showLine3">griego</h1>
+            <div class="words" [class.show]="showWords3">
+                <span class="word">con garra</span>
+                <span class="word">herby</span>
+                <span class="word">ácido</span>
+            </div>
+        
+        </div>
+
+        <div class="productos__flex" 
+            (mouseenter)="showLine4 = true" 
+            (mouseleave)="showLine4 = false" 
+            (mouseenter)="showWords4 = true" 
+            (mouseleave)="showWords4 = false"
+        >
+            <div style="width: 25%;" class="image-container">
+                <img style="width: 100%;" class="productos__img" src="../../../../assets/img/prod5_1.png" alt="">
+            </div>
+            <h1 class="productosDetail__h1" [class.show-line]="showLine4">balsámico</h1>
+            <div class="words" [class.show]="showWords4">
+                <span class="word">liso</span>
+                <span class="word">brillante</span>
+                <span class="word">picante</span>
+            </div>
+        
+        </div>
+
+        <div class="productos__flex" 
+            (mouseenter)="showLine5 = true" 
+            (mouseleave)="showLine5 = false" 
+            (mouseenter)="showWords5 = true" 
+            (mouseleave)="showWords5 = false"
+        >
+            <div style="width: 25%;" class="image-container">
+                <img style="width: 100%;" class="productos__img" src="../../../../assets/img/prod6.png" alt="">
+            </div>
+            <h1 class="productosDetail__h1" [class.show-line]="showLine5">aceituna verde</h1>
+            <div class="words" [class.show]="showWords5">
+                <span class="word">picante</span>
+                <span class="word">terroso</span>
+                <span class="word">lindo</span>
+            </div>
+        
+        </div>
+
+        <div class="productos__flex" 
+            (mouseenter)="showLine6 = true" 
+            (mouseleave)="showLine6 = false" 
+            (mouseenter)="showWords6 = true" 
+            (mouseleave)="showWords6 = false"
+        >
+            <div style="width: 30%;" class="image-container">
+                <img style="width: 100%;" class="productos__img" src="../../../../assets/img/prod7.png" alt="">
+            </div>
+            <h1 class="productosDetail__h1" [class.show-line]="showLine6">italiano</h1>
+            <div class="words" [class.show]="showWords6">
+                <span class="word">aromático</span>
+                <span class="word">picante</span>
+                <span class="word">crujiente</span>
+            </div>
+        
+        </div>
+
+    </div>
+
+    <div class="productos__grid1">
+        <div style="background-color: rgb(251, 13, 27);" class="productos__flex">
+            <h1 class="productos__h1">
+                SALSAS BBQ
+            </h1>
+        </div>
+
+        <div class="productos__flex" 
+            (mouseenter)="showLine7 = true" 
+            (mouseleave)="showLine7 = false" 
+            (mouseenter)="showWords7 = true" 
+            (mouseleave)="showWords7 = false"
+        >
+            <div style="width: 40%;" class="image-container">
+                <img style="width: 100%;" class="productos__img" src="../../../../assets/img/prod8.png" alt="">
+            </div>
+            <h1 class="productosDetail__h1" [class.show-line]="showLine7">original</h1>
+            <div class="words" [class.show]="showWords7">
+                <span class="word">tradicional</span>
+                <span class="word">simple</span>
+                <span class="word">bien</span>
+            </div>
+        
+        </div>
+
+        <div class="productos__flex backgroundRed">
+            <div class="imagen"></div>
+        </div>
+        
+
+        <div class="productos__flex" 
+            (mouseenter)="showLine8 = true" 
+            (mouseleave)="showLine8 = false" 
+            (mouseenter)="showWords8 = true" 
+            (mouseleave)="showWords8 = false"
+        >
+            <div style="width: 40%;" class="image-container">
+                <img style="width: 100%;" class="productos__img" src="../../../../assets/img/prod9.png" alt="">
+            </div>
+            <h1 style="width: 60%;" class="productosDetail__h1" [class.show-line]="showLine8">melaza de arce</h1>
+            <div class="words" [class.show]="showWords8">
+                <span class="word">estilo hogareño</span>
+                <span class="word">picante</span>
+                <span class="word">dulce</span>
+            </div>
+        
+        </div>
+
+        <div class="productos__flex" 
+            (mouseenter)="showLine9 = true" 
+            (mouseleave)="showLine9 = false" 
+            (mouseenter)="showWords9 = true" 
+            (mouseleave)="showWords9 = false"
+        >
+            <div style="width: 40%;" class="image-container">
+                <img style="width: 100%;" class="productos__img" src="../../../../assets/img/prod10.png" alt="">
+            </div>
+            <h1 class="productosDetail__h1" [class.show-line]="showLine9">calentador</h1>
+            <div class="words" [class.show]="showWords9">
+                <span class="word">un poco dulce</span>
+                <span class="word">picante</span>
+            </div>
+        
+        </div>
+
+        <div class="productos__flex flexEncontrar" id="contenedor">
+            <h1 style="margin-top: 15px;" class="productos__h1">dónde encontrarnos</h1>
+        
+
+            <a class="productos__button" [routerLink]="['/encontrarnos']">
+                <h1 class="productos__a">descubrir</h1>
+            </a>
+        </div>
+
+    </div>
+
+    <div class="slider-container">
+        <div class="sliderWord">
+          <div class="slide-container">
+            <div class="slideWord">COCINA COMO UN MATEMÁTICO • COCINA COMO UN MATEMÁTICO • COCINA COMO UN MATEMÁTICO • COCINA COMO UN MATEMÁTICO • COCINA COMO UN MATEMÁTICO • COCINA COMO UN MATEMÁTICO • COCINA COMO UN MATEMÁTICO • COCINA COMO UN MATEMÁTICO • </div>
+          </div>
+        </div>
+    </div>
+</section>

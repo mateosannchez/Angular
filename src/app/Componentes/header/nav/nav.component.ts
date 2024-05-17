@@ -10,5 +10,13 @@ import { Router } from '@angular/router';
   styleUrls: ['./nav.component.css']
 })
 export class NavComponent {
- 
+  showMenu: boolean = false;
+
+  toggleMenu() {
+    this.showMenu = !this.showMenu;
+  }
+
+  closeMenu() {
+    this.showMenu = false;
+  }
 }

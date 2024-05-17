@@ -1,42 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-</head>
-
-<body class="media1527">
-
-    <div>
-
-        <img class="contenedor" src="../../../assets/img/back.jpg" alt="">
-
-        <!-- title -->
-        <div class="header__t">
-            <h1 class="header__h1">Anselm Kiefer</h1>
-
-            <h3 class="header__h3">Finnegans Wake</h3>
-
-            <p class="header__p">7 Junio – 20 Agosto 2023</p>
-
-            <p class="header__p">Córdoba, Argentina</p>
-
-            <a [routerLink]="['/exhibicion']" style="padding-top: 2rem;" class="header__a"><i style="font-size: 15px;"
-                    class="ri-arrow-right-line"></i> visita exhibición
-            </a>
-
-            <a style="text-decoration: none; color: white;" href="#miSeccion">
-                <p style="padding-top: 3rem;" class="header__p"><i class="ri-arrow-down-line"></i></p>
-            </a>
-
-        </div>
-        <!-- title -->
+<div class="header">
+    <div class="nav__container" >
+        <app-nav></app-nav>
     </div>
-
-    <app-nav></app-nav>
-</body>
-
-</html>
+    <div class="header__container">
+        <h1 class="header__h1">matherson <br/> food <br/> company</h1>
+    </div>
+</div>

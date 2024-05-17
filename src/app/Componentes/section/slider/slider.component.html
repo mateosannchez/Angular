@@ -1,0 +1,6 @@
+<div class="slider">
+    <img *ngFor="let image of images; let i = index"
+         [src]="image"
+         alt="Slide"
+         [class.active]="i === currentSlideIndex">
+</div>

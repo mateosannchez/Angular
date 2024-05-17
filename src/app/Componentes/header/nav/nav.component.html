@@ -1,25 +1,58 @@
-<div class="header__grid">
-    <div>
-        <a class="header__a" [routerLink]="['/artistas']">Artistas</a>
+<div class="nav">
+    <div class="nav__grid">
+        <div>
+            <a class="header__a" [routerLink]="['/productos']" fragment="productos">Productos</a>
+        </div>
+        <div>
+            <a class="header__a" [routerLink]="['/acerca-de']">Acerca de </a>
+        </div>
+        <div>
+            <a class="header__a" [routerLink]="['/recetas']">Recetas</a>
+        </div>
+        <div>
+            <a class="" [routerLink]="['/home']">
+                <img class="nav__img" src="../../../../assets//img/matherson.png" alt="">
+            </a>
+        </div>
+        <div>
+            <a class="header__a" [routerLink]="['/encontrarnos']">Encuéntranos</a>
+        </div>
+        <div>
+            <a class="header__a" [routerLink]="['/contacto']">Contacto</a>
+        </div>
+        <div>
+            <a class="" [routerLink]="['/']">
+                <i class="fa-brands fa-instagram header__a"></i>
+            </a>
+        </div>
     </div>
-    <div>
-        <a class="header__a" [routerLink]="['/exhibicion']">Exhibicion</a>
-    </div>
+</div>
 
-    <div class="header__traslate header__transform" >
-        <a class="header__logo" [routerLink]="['/home']">white cube</a>
-    </div>
+<div class="navResponsive">
 
-    <div class="header__margin header__left">
-        <a class="header__a" [routerLink]="['/coleccion']">Colección</a>
-    </div>
-    <div>
-        <a class="header__a" [routerLink]="['/shop']">Noticias</a>
-    </div>
+    <h1 class="navResponsive__h1">mfc 
+        <p class="navResponsive__p"> &copy;</p>
+    </h1>
 
-    <div class="header__i">
-        <a class="header__a">
-            <i class=" ri-account-circle-line"></i>
+    <div (click)="toggleMenu()">
+        <i class="fa fa-bars navResponsive__menu"></i>
+    </div>
+</div>
+
+<!-- Pestaña del menú desplegable -->
+<div class="menu-overlay" *ngIf="showMenu">
+    <div class="menu-content">
+        <button class="menu-overlay__button" (click)="toggleMenu()"><i class="fa fa-times"></i></button>
+        <a class="navResponsive__a" [routerLink]="['/productos']" (click)="closeMenu()">productos</a>
+        <a class="navResponsive__a" [routerLink]="['/acerca-de']" (click)="closeMenu()">acerca de</a>
+        <a class="navResponsive__a" [routerLink]="['/recetas']" (click)="closeMenu()">recetas</a>
+        <a class="navResponsive__a" [routerLink]="['/encontrarnos']" (click)="closeMenu()">encuéntranos</a>
+
+        <a [routerLink]="['/']" (click)="closeMenu()">
+            <img class="navResponsive__img" src="../../../../assets/img/matty.png" alt="">
         </a>
+
+        <p class="navResponsive__p1">© COMPAÑÍA DE ALIMENTOS MATHESON 2023</p>
+    
     </div>
 </div>
