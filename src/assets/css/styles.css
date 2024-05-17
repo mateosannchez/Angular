@@ -1037,6 +1037,12 @@ body {
     }
 }
 
+@media(min-width: 414px) {
+    .contacto {
+        height: 67.2rem;
+    }
+}
+
 @media(min-width: 580px) {
     .menu-overlay__button {
         left: 506px;
